@@ -6,46 +6,86 @@
   <title>La Lova - Admin</title>
   <link href="../src/output.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 font-sans">
-  
+<body class="bg-pink-50 font-sans">
+
   <!-- Header -->
-  <header class="bg-indigo-700 text-white py-4">
+  <header class="bg-pink-700 text-white py-4 shadow-lg">
     <div class="container mx-auto px-6 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Admin Dashboard - La Lova</h1>
-      <nav>
-        <a href="profil.html" class="text-indigo-200 hover:text-white mx-2">Profile</a>
-        <a href="logout.html" class="text-indigo-200 hover:text-white mx-2">Logout</a>
+      <div class="flex items-center">
+        <!-- Logo Admin -->
+        <img src="../assets/logokue.png" alt="Logo Admin" class="h-10 w-10 rounded-full mr-3">
+        <h3 class="text-2xl font-bold">Admin</h3>
+      </div>
+      <nav class="flex space-x-4">
+        <a href="adminprofil.html" class="text-pink-200 hover:text-white transition">Profile</a>
+        <a href="login.html" class="text-pink-200 hover:text-white transition">Logout</a>
       </nav>
     </div>
   </header>
 
   <!-- Main Content -->
   <main class="container mx-auto px-6 py-10">
-    <h2 class="text-3xl font-bold text-indigo-700 mb-6">Dashboard</h2>
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      
+    <h2 class="text-4xl font-bold text-pink-700 mb-8 text-center">La Lova Admin Dashboard</h2>
+
+    <!-- Dashboard Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
       <!-- Kelola Produk -->
-      <div class="bg-white shadow-lg rounded-lg p-6">
-        <h3 class="text-xl font-bold text-indigo-700 mb-4">Kelola Produk</h3>
-        <p>Tambah, ubah, atau hapus produk yang ada di toko.</p>
-        <button class="bg-indigo-700 text-white py-2 px-4 rounded mt-4 hover:bg-indigo-600">Kelola</button>
+      <div class="bg-white shadow-xl rounded-lg p-8 transform hover:scale-105 transition duration-300">
+        <div class="flex items-center mb-4">
+          <div class="bg-pink-100 p-3 rounded-full">
+            <svg class="h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-pink-700 ml-4">Kelola Produk</h3>
+        </div>
+        <p class="text-gray-600">Tambah, ubah, atau hapus produk yang ada di toko Anda.</p>
+        <button class="bg-pink-700 text-white py-2 px-4 rounded-full mt-6 hover:bg-pink-800">Kelola</button>
       </div>
-      
+
       <!-- Pesanan -->
-      <div class="bg-white shadow-lg rounded-lg p-6">
-        <h3 class="text-xl font-bold text-indigo-700 mb-4">Kelola Pesanan</h3>
-        <p>Lihat dan kelola pesanan pelanggan.</p>
-        <button class="bg-indigo-700 text-white py-2 px-4 rounded mt-4 hover:bg-indigo-600">Lihat Pesanan</button>
+      <div class="bg-white shadow-xl rounded-lg p-8 transform hover:scale-105 transition duration-300">
+        <div class="flex items-center mb-4">
+          <div class="bg-pink-100 p-3 rounded-full">
+            <svg class="h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-6h13v6m0 0V9a2 2 0 00-2-2H5a2 2 0 00-2 2v8m16 0H3" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-pink-700 ml-4">Kelola Pesanan</h3>
+        </div>
+        <p class="text-gray-600">Lihat dan kelola pesanan pelanggan Anda.</p>
+        <button class="bg-pink-700 text-white py-2 px-4 rounded-full mt-6 hover:bg-pink-800">Lihat Pesanan</button>
       </div>
-      
+
       <!-- Feedback -->
-      <div class="bg-white shadow-lg rounded-lg p-6">
-        <h3 class="text-xl font-bold text-indigo-700 mb-4">Umpan Balik</h3>
-        <p>Tinjau umpan balik dari pelanggan untuk meningkatkan layanan.</p>
-        <button class="bg-indigo-700 text-white py-2 px-4 rounded mt-4 hover:bg-indigo-600">Lihat Feedback</button>
+      <div class="bg-white shadow-xl rounded-lg p-8 transform hover:scale-105 transition duration-300">
+        <div class="flex items-center mb-4">
+          <div class="bg-pink-100 p-3 rounded-full">
+            <svg class="h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16h6M21 12.79V12a9 9 0 10-7.93 4.94" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-pink-700 ml-4">Umpan Balik</h3>
+        </div>
+        <p class="text-gray-600">Tinjau umpan balik pelanggan untuk meningkatkan layanan.</p>
+        <button class="bg-pink-700 text-white py-2 px-4 rounded-full mt-6 hover:bg-pink-800">Lihat Feedback</button>
       </div>
-      
+
+      <!-- Statistik -->
+      <div class="bg-white shadow-xl rounded-lg p-8 transform hover:scale-105 transition duration-300">
+        <div class="flex items-center mb-4">
+          <div class="bg-pink-100 p-3 rounded-full">
+            <svg class="h-6 w-6 text-pink-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-pink-700 ml-4">Statistik Toko</h3>
+        </div>
+        <p class="text-gray-600">Lihat data penjualan, jumlah produk, dan performa toko Anda.</p>
+        <button class="bg-pink-700 text-white py-2 px-4 rounded-full mt-6 hover:bg-pink-800">Lihat Statistik</button>
+      </div>
+
     </div>
   </main>
 
